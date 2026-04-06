@@ -67,7 +67,7 @@ app.post('/api/chat', async (req, res) => {
 });
 
 // 🔥 ✅ ADD ANGULAR STATIC SERVING HERE (IMPORTANT)
-const distPath = path.join(__dirname, 'dist/angular-master');
+const distPath = path.join(__dirname, 'dist/vault-admin');
 
 if (!fs.existsSync(distPath)) {
   console.error("❌ DIST folder not found:", distPath);
