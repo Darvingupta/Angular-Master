@@ -1,0 +1,33 @@
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+Component HMR has been enabled, see https://angular.dev/hmr for more info.
+❯ Building...
+✔ Building...
+Initial chunk files | Names                         |  Raw size
+polyfills.js        | polyfills                     |  89.77 kB | 
+main.js             | main                          |  16.80 kB | 
+chunk-C4KO2HLL.js   | -                             | 614 bytes | 
+styles.css          | styles                        |  95 bytes | 
+
+                    | Initial total                 | 107.28 kB
+
+Lazy chunk files    | Names                         |  Raw size
+chunk-G5OJFBSE.js   | component-api-component       |  17.76 kB | 
+chunk-GLXQALBZ.js   | error-log-component           |  16.03 kB | 
+chunk-A4VSWDD5.js   | advanced-reactivity-component |  14.10 kB | 
+chunk-KLPPOUGP.js   | defer-component               |  13.71 kB | 
+chunk-OMQLAMA6.js   | signals-masterclass-component |  13.56 kB | 
+chunk-HDVMZTNW.js   | lifecycle-component           |  13.51 kB | 
+chunk-E6YATUHM.js   | auth-component                |  13.24 kB | 
+chunk-CADSTCVS.js   | control-flow-component        |  13.10 kB | 
+chunk-U4BZBB34.js   | async-forms-component         |  12.41 kB | 
+chunk-ST5GEJQ4.js   | rxjs-interop-component        |  11.67 kB | 
+chunk-PP62EBZI.js   | lazy-loading-component        |  11.08 kB | 
+chunk-TASDXKCY.js   | standalone-component          |  10.06 kB | 
+
+Application bundle generation complete. [0.964 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.29.78:4200/

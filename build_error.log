@@ -1,0 +1,92 @@
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+Component HMR has been enabled, see https://angular.dev/hmr for more info.
+❯ Building...
+✔ Building...
+Application bundle generation failed. [0.879 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTS-998113: ComponentApiChildComponent is not used within the template of ComponentApiComponent[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/component-api.component.ts:40:26:
+[37m      40 │   imports: [CommonModule, [32mComponentApiChildComponent[37m],
+         ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:51:12:
+[37m      51 │           } [32m@else [37m{
+         ╵             [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unclosed block "else"[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:51:12:
+[37m      51 │           } [32m@else {[37m
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:65:103:
+[37m      65 │ ... function to <code>signal(val, [32m{[37mequal: myFunc})</code> to contr...
+         ╵                                   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:69:2:
+[37m      69 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:69:2:
+[37m      69 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'number' is not assignable to parameter of type '100 | 50'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/advanced-reactivity.component.ts:100:20:
+[37m      100 │     this.amount.set([32mNumber(val)[37m);
+          ╵                     [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/component-api.component.ts:11:33:
+[37m      11 │ ...odel (Two-way): <input [32m[(ngModel)]="countModel"[37m type="number"></p>
+         ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/component-api.component.ts:84:2:
+[37m      84 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/component-api.component.ts:84:2:
+[37m      84 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/signals-masterclass.component.ts:73:2:
+[37m      73 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/signals/signals-masterclass.component.ts:73:2:
+[37m      73 │   [32m`[37m,
+         ╵   [32m^[0m
+
+
+Watch mode enabled. Watching for file changes...
