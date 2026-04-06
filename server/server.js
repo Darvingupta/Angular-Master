@@ -12,7 +12,7 @@ dotenv.config();
 const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -64,6 +64,20 @@ app.post('/api/chat', async (req, res) => {
     console.error("Gemini Error:", error);
     res.status(500).json({ error: "Failed to communicate with AI.", details: error.message });
   }
+});
+
+// 🔥 ✅ ADD ANGULAR STATIC SERVING HERE (IMPORTANT)
+const distPath = path.join(__dirname, 'dist/angular-master');
+
+if (!fs.existsSync(distPath)) {
+  console.error("❌ DIST folder not found:", distPath);
+}
+
+app.use(express.static(distPath));
+
+// Angular routing support
+app.get('*', (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'));
 });
 
 app.post('/api/apply', async (req, res) => {
