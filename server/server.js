@@ -105,6 +105,6 @@ app.post('/api/apply', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`AI Agent Backend running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`AI Agent Backend listening on port ${PORT}`);
 });
