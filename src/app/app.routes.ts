@@ -47,6 +47,22 @@ export const routes: Routes = [
     loadComponent: () => import('./features/lifecycle/lifecycle.component').then(m => m.LifecycleComponent)
   },
   {
+    path: 'directives',
+    loadComponent: () => import('./features/directives/directives.component').then(m => m.DirectivesComponent)
+  },
+  {
+    path: 'dependency-injection',
+    loadComponent: () => import('./features/di/dependency-injection.component').then(m => m.DependencyInjectionComponent)
+  },
+  {
+    path: 'cli-commands',
+    loadComponent: () => import('./features/cli/cli-commands.component').then(m => m.CliCommandsComponent)
+  },
+  {
+    path: 'zonejs',
+    loadComponent: () => import('./features/zonejs/zonejs.component').then(m => m.ZoneJsComponent)
+  },
+  {
     path: 'lazy-loading',
     loadComponent: () => import('./features/lazy-loading/lazy-loading.component').then(m => m.LazyLoadingComponent)
   },

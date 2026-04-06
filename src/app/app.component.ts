@@ -67,6 +67,22 @@ import { AiAgentComponent } from './features/ai-agent/ai-agent.component';
               <span class="icon">🌱</span>
               <span class="label">Lifecycle & Effect</span>
             </a>
+            <a routerLink="/directives" routerLinkActive="active" class="nav-item">
+              <span class="icon">✨</span>
+              <span class="label">Directives</span>
+            </a>
+            <a routerLink="/dependency-injection" routerLinkActive="active" class="nav-item">
+              <span class="icon">💉</span>
+              <span class="label">Dependency Injection</span>
+            </a>
+            <a routerLink="/cli-commands" routerLinkActive="active" class="nav-item">
+              <span class="icon">⌨️</span>
+              <span class="label">CLI Commands</span>
+            </a>
+            <a routerLink="/zonejs" routerLinkActive="active" class="nav-item">
+              <span class="icon">⚡</span>
+              <span class="label">Zone.js & Zoneless</span>
+            </a>
             <a routerLink="/lazy-loading" routerLinkActive="active" class="nav-item">
               <span class="icon">🚀</span>
               <span class="label">Lazy Loading</span>
