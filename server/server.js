@@ -67,7 +67,10 @@ app.post('/api/chat', async (req, res) => {
 });
 
 // 🔥 ✅ ADD ANGULAR STATIC SERVING HERE (IMPORTANT)
-const distPath = path.join(__dirname, 'dist/vault-admin');
+// Check both browser nesting (Angular 17+) and standard root nesting
+const distStandard = path.join(__dirname, '../dist/vault-admin');
+const distBrowser = path.join(__dirname, '../dist/vault-admin/browser');
+const distPath = fs.existsSync(distBrowser) ? distBrowser : distStandard;
 
 if (!fs.existsSync(distPath)) {
   console.error("❌ DIST folder not found:", distPath);
@@ -75,9 +78,13 @@ if (!fs.existsSync(distPath)) {
 
 app.use(express.static(distPath));
 
-// Angular routing support
-app.get('*', (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
+// Angular routing support (catch-all for SPA)
+app.use((req, res, next) => {
+  if (req.method === 'GET' && req.accepts('html')) {
+    res.sendFile(path.join(distPath, 'index.html'));
+  } else {
+    next();
+  }
 });
 
 app.post('/api/apply', async (req, res) => {
